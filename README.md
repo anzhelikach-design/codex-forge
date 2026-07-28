@@ -1,12 +1,14 @@
-# codex-forge
+# de-course-playground
 
-## Про мене (тестові дані)
+Learning sandbox for the **Design Engineer** course.
+This is where I practise the engineering side: commits, branches, pull requests.
 
-- 👋 Звати Анжеліка
-- 🛠️ Люблю тестувати нові інструменти та репозиторії
-- 🌍 Живу десь на планеті Земля
-- ☕ Улюблений напій: кава (звісно)
-- 🐙 Цей репозиторій створено як тестовий полігон
-- 🚀 Зараз навчаюсь працювати з гілками та Pull Request'ами в Git
+## About me
 
-*Ця інформація випадкова і додана лише для тестування.*
+- 👋 **Anzhelika Ch.** — UX/UI & Product Designer, 6 years
+- 📱 Mobile apps and SaaS products
+- 🎨 Figma daily — Auto Layout, Variables, component libraries, prototyping, Dev Mode handoff
+- 🌱 Currently learning — Git, HTML/CSS, Tailwind, Claude Code
+- 💬 [LinkedIn](https://www.linkedin.com/in/anzhelika-chernysheva/)
+
+> Test data lives here too — it's a playground, not a portfolio.
