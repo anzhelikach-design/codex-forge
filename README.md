@@ -11,4 +11,9 @@ This is where I practise the engineering side: commits, branches, pull requests.
 - 🌱 Currently learning — Git, HTML/CSS, Tailwind, Claude Code
 - 💬 [LinkedIn](https://www.linkedin.com/in/anzhelika-chernysheva/)
 
+## What's in here
+
+- [`lesson-03/`](lesson-03/) — two Figma designs rebuilt in HTML + Tailwind: a responsive
+  web page and a mobile app screen
+
 > Test data lives here too — it's a playground, not a portfolio.
