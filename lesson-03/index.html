@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blaze · Hello screen</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="flex min-h-screen items-center justify-center bg-neutral-900 p-6 font-[Inter]">
+
+  <main class="relative h-[853px] w-[393px] overflow-hidden bg-[#110c10]">
+
+    <!-- фон: фото + затемнення. Декоративні, тому alt="" -->
+    <img
+      src="https://raw.githubusercontent.com/anzhelikach-design/de-course-playground/main/lesson-03/blaze-bg.jpg"
+      alt=""
+      class="absolute inset-0 h-full w-full object-cover" />
+    <div class="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.07),rgba(0,0,0,0.71))]"></div>
+
+    <!-- контент -->
+    <div class="relative flex h-full flex-col px-5 pt-[92px] pb-10">
+
+      <header class="flex justify-center">
+        <svg viewBox="0 0 160 46.7626" class="h-[47px] w-[160px]" fill="none"
+             role="img" aria-label="Blaze" xmlns="http://www.w3.org/2000/svg">
+          <path d="M65.5133 46.1161C56.2466 46.1161 50.3354 38.6058 52.3058 29.3534C54.2762 20.0868 63.3715 12.5907 72.6381 12.5907C81.9048 12.5907 87.816 20.1011 85.8456 29.3534L82.276 46.1161H73.8946L74.5229 43.1463C73.3378 44.0601 70.5535 46.1161 65.5133 46.1161ZM67.298 37.7348C78.6921 37.7348 81.7049 20.972 70.8676 20.972C66.2415 20.972 61.6867 24.7272 60.7015 29.3534C59.7163 33.9796 62.6719 37.7348 67.298 37.7348Z" fill="white"/>
+          <path d="M0.378805 29.3419L6.61842 0H14.9998L11.7015 15.5491C14.4287 13.4359 17.2701 12.5792 20.7111 12.5792C29.9778 12.5792 35.889 20.0896 33.9186 29.3419C31.9482 38.5943 22.8529 46.1047 13.5862 46.1047C4.31962 46.1047 -1.5916 38.5943 0.378805 29.3419ZM15.371 37.7233C19.9972 37.7233 24.552 33.9681 25.5372 29.3419C26.9222 22.831 20.6969 18.8902 14.5001 22.0886C6.31858 26.0008 6.67554 37.7233 15.371 37.7233Z" fill="white"/>
+          <path d="M153.502 36.6251L152.103 43.2074C149.989 45.1492 144.435 46.7627 140.409 46.7627C131.142 46.7627 125.231 39.2523 127.201 29.9999C131.87 8.05414 165.581 10.61 159.199 26.1876C156.115 33.7266 143.621 37.3533 135.326 33.3125C136.868 43.1502 152.888 37.7673 153.502 36.6108V36.6251ZM136.696 27.1585C150.218 30.4283 155.986 21.59 148.447 21.3473C143.379 21.1759 139.324 22.8465 136.725 27.0871C136.725 27.1157 136.696 27.13 136.682 27.1585H136.696Z" fill="white"/>
+          <path d="M43.9458 46.1047H35.5643L45.3593 2.5117e-05H53.7407L43.9458 46.1047Z" fill="white"/>
+          <path d="M124.752 17.034C124.509 18.1762 123.838 19.2043 122.939 19.961L104.077 37.9946H120.297L118.512 46.3759H93.3539C91.0408 46.3759 89.5558 44.5055 90.0556 42.1781C90.284 41.0787 90.9265 40.0792 91.7832 39.3367L110.716 21.2318H94.5104L96.2952 12.8504H121.439C123.752 12.8504 125.237 14.7209 124.738 17.034H124.752Z" fill="white"/>
+        </svg>
+      </header>
+
+      <section class="mt-auto flex flex-col gap-8">
+        <h1 class="text-center text-[40px] leading-[1.23] font-medium text-white">
+          Stay Fit, Stay Happy Every Day
+        </h1>
+
+        <div class="flex flex-col gap-5">
+          <a href="#"
+             class="flex h-[55px] items-center justify-center rounded-lg bg-[#e73f1a] text-base font-medium text-white transition hover:bg-[#cf3817]">
+            Get Started
+          </a>
+          <a href="#"
+             class="flex h-[55px] items-center justify-center rounded-lg bg-white text-base font-medium text-[#2d2b2d] transition hover:bg-neutral-200">
+            Sign In
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
