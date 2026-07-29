@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CliquezJustice — Connaissez vos droits en français partout au Canada</title>
+  <meta name="description" content="Information juridique fiable en français partout au Canada : vos droits, infographies, éducation et glossaire." />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!--
+    Змінні з Figma → CSS Variables → класи Tailwind.
+    Імена лишені такими ж, як у дизайн-системі: blue/brand/blue-90 → blue-90.
+  -->
+  <style type="text/tailwindcss">
+    @theme {
+      --color-blue-05: #f9fafb;
+      --color-blue-15: #e3eaf0;
+      --color-blue-20: #bed0de;
+      --color-blue-50: #498bca;
+      --color-blue-60: #02508c;
+      --color-blue-90: #001424;
+      --color-yellow-50: #edb52c;
+      --color-neutral-50: #828282;
+      --color-neutral-60: #565a5c;
+      --color-neutral-70: #3a434a;
+      --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-blue-05 font-sans text-blue-90 antialiased">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="relative isolate min-h-[513px] overflow-hidden bg-blue-05">
+
+    <!-- декоративне тло: розмитий градієнт, згасає донизу -->
+    <img src="assets/hero-bg.jpg" alt="" aria-hidden="true"
+         class="absolute inset-0 -z-10 h-full w-full rotate-180 object-cover
+                [mask-image:linear-gradient(to_bottom,transparent,black)]" />
+
+    <!-- декоративна жовта дуга, на мобільних приховуємо -->
+    <img src="assets/yellow-arc.svg" alt="" aria-hidden="true"
+         class="pointer-events-none absolute -z-10 hidden h-[784px] w-[595px]
+                top-1/2 -translate-y-[calc(50%+152px)] -right-[325px] lg:block" />
+
+    <!-- ── хедер ── -->
+    <header class="absolute inset-x-4 top-5 z-20 mx-auto max-w-[1391px]">
+      <div class="flex items-center justify-between gap-4 rounded-[48px] bg-white px-6 py-4">
+
+        <a href="/" class="shrink-0 rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-60">
+          <img src="assets/logo.svg" alt="CliquezJustice — La réponse à vos questions"
+               class="h-[46px] w-[178px]" />
+        </a>
+
+        <!-- навігація: ховаємо на вузьких екранах -->
+        <nav aria-label="Navigation principale" class="hidden xl:block">
+          <ul class="flex items-center gap-2">
+            <li>
+              <button type="button" aria-expanded="false"
+                      class="flex items-center gap-1 rounded px-3 py-1.5 text-base font-medium text-neutral-70 hover:text-blue-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">
+                Vos droits
+                <svg viewBox="0 0 20 20" class="size-5 shrink-0" fill="currentColor" aria-hidden="true">
+                  <path d="M10.0005 14.5448L5.28906 9.83333L6.16719 8.9552L10.0005 12.7885L13.8339 8.9552L14.712 9.83333L10.0005 14.5448Z"/>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a href="#" class="block rounded px-3 py-1.5 text-base font-medium text-neutral-70 hover:text-blue-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">Infographies</a>
+            </li>
+            <li>
+              <button type="button" aria-expanded="false"
+                      class="flex items-center gap-1 rounded px-3 py-1.5 text-base font-medium text-neutral-70 hover:text-blue-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">
+                Éducation
+                <svg viewBox="0 0 20 20" class="size-5 shrink-0" fill="currentColor" aria-hidden="true">
+                  <path d="M10.0005 14.5448L5.28906 9.83333L6.16719 8.9552L10.0005 12.7885L13.8339 8.9552L14.712 9.83333L10.0005 14.5448Z"/>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a href="#" class="block rounded px-3 py-1.5 text-base font-medium text-neutral-70 hover:text-blue-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">Glossaire</a>
+            </li>
+            <li>
+              <button type="button" aria-expanded="false"
+                      class="flex items-center gap-1 rounded px-3 py-1.5 text-base font-medium text-neutral-70 hover:text-blue-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">
+                À propos
+                <svg viewBox="0 0 20 20" class="size-5 shrink-0" fill="currentColor" aria-hidden="true">
+                  <path d="M10.0005 14.5448L5.28906 9.83333L6.16719 8.9552L10.0005 12.7885L13.8339 8.9552L14.712 9.83333L10.0005 14.5448Z"/>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a href="#" class="block rounded px-3 py-1.5 text-base font-medium text-neutral-70 hover:text-blue-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">Trouver de l'aide</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex shrink-0 items-center gap-2">
+          <button type="button" aria-label="Rechercher"
+                  class="flex size-[46px] items-center justify-center rounded-full border border-blue-15 bg-white hover:bg-blue-05 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">
+            <svg viewBox="0 0 18 18" class="size-[18px]" fill="none" stroke="currentColor"
+                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15.75 15.75L12.4927 12.4927M12.4927 12.4927C13.0499 11.9356 13.4919 11.2741 13.7934 10.5462C14.095 9.81819 14.2502 9.03795 14.2502 8.25C14.2502 7.46205 14.095 6.68181 13.7934 5.95384C13.4919 5.22587 13.0499 4.56442 12.4927 4.00725C11.9356 3.45008 11.2741 3.00812 10.5462 2.70658C9.81819 2.40504 9.03795 2.24985 8.25 2.24985C7.46205 2.24985 6.68181 2.40504 5.95384 2.70658C5.22587 3.00812 4.56442 3.45008 4.00725 4.00725C2.882 5.1325 2.24985 6.65866 2.24985 8.25C2.24985 9.84134 2.882 11.3675 4.00725 12.4927C5.1325 13.618 6.65866 14.2502 8.25 14.2502C9.84134 14.2502 11.3675 13.618 12.4927 12.4927Z"/>
+            </svg>
+          </button>
+
+          <!-- бургер: у макеті його немає, це моє доповнення для вузьких екранів -->
+          <button type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+                  class="flex size-[46px] items-center justify-center rounded-full border border-blue-15 bg-white hover:bg-blue-05 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60 xl:hidden">
+            <svg viewBox="0 0 20 20" class="size-5" fill="none" stroke="currentColor"
+                 stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M3 6h14M3 10h14M3 14h14"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ── контент героя ── -->
+    <div class="mx-auto flex min-h-[513px] max-w-[814px] flex-col justify-center px-4 pt-[140px] pb-16 lg:pt-[100px] lg:pb-0">
+      <div class="flex flex-col gap-6">
+
+        <div class="flex flex-col gap-1 text-center">
+          <p class="text-base font-medium">Information Juridique Fiable</p>
+          <h1 class="text-[32px] leading-none font-medium sm:text-[40px] lg:text-[52px]">
+            Connaissez vos droits en français partout au Canada
+          </h1>
+        </div>
+
+        <div class="flex flex-col items-center gap-4">
+
+          <form role="search" action="#" class="w-full">
+            <label for="search" class="sr-only">Rechercher un sujet</label>
+            <div class="flex items-center rounded-full border border-blue-20 bg-white py-0.5 pr-0.5 pl-4 sm:pl-6 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-60">
+              <input id="search" type="search" name="q" placeholder="Rechercher un sujet"
+                     class="min-w-0 flex-1 bg-transparent py-3 text-base text-blue-90 placeholder:text-neutral-50 focus:outline-none" />
+              <button type="submit"
+                      class="flex h-[50px] shrink-0 items-center justify-center gap-2 rounded-full bg-yellow-50 px-4 text-base font-medium text-blue-90 transition hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60 sm:px-6">
+                <svg viewBox="0 0 16 16" class="size-4 shrink-0" fill="none" stroke="currentColor"
+                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 14L11.1047 11.1047M11.1047 11.1047C11.5999 10.6094 11.9928 10.0215 12.2608 9.37436C12.5288 8.72728 12.6668 8.03373 12.6668 7.33333C12.6668 6.63293 12.5289 5.93939 12.2608 5.2923C11.9928 4.64522 11.5999 4.05726 11.1047 3.562C10.6094 3.06674 10.0215 2.67388 9.37436 2.40585C8.72728 2.13782 8.03373 1.99986 7.33333 1.99986C6.63293 1.99986 5.93939 2.13782 5.2923 2.40585C4.64522 2.67388 4.05726 3.06674 3.562 3.562C2.56178 4.56222 1.99986 5.91881 1.99986 7.33333C1.99986 8.74786 2.56178 10.1044 3.562 11.1047C4.56222 12.1049 5.91881 12.6668 7.33333 12.6668C8.74786 12.6668 10.1044 12.1049 11.1047 11.1047Z"/>
+                </svg>
+                <span class="hidden sm:inline">Rechercher</span>
+              </button>
+            </div>
+          </form>
+
+          <!-- фільтри: перемикають результати, тому button + aria-pressed -->
+          <div class="flex flex-wrap items-center justify-center gap-2" role="group" aria-label="Filtrer par type">
+            <button type="button" aria-pressed="true"
+                    class="rounded-full bg-blue-50 px-3.5 py-1 text-xs text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">Tous</button>
+            <button type="button" aria-pressed="false"
+                    class="rounded-full bg-white px-3.5 py-1 text-xs text-neutral-70 hover:bg-blue-15 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">Articles</button>
+            <button type="button" aria-pressed="false"
+                    class="rounded-full bg-white px-3.5 py-1 text-xs text-neutral-70 hover:bg-blue-15 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">Infographies</button>
+            <button type="button" aria-pressed="false"
+                    class="rounded-full bg-white px-3.5 py-1 text-xs text-neutral-70 hover:bg-blue-15 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">Vidéos</button>
+            <button type="button" aria-pressed="false"
+                    class="rounded-full bg-white px-3.5 py-1 text-xs text-neutral-70 hover:bg-blue-15 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">Glossaire</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VOS DROITS ═══ -->
+  <section aria-labelledby="droits-title" class="bg-blue-05 px-4 pb-20 lg:px-[60px]">
+    <h2 id="droits-title" class="sr-only">Vos droits</h2>
+
+    <ul class="grid grid-cols-2 gap-3 lg:grid-cols-4">
+      <li>
+        <a href="#" class="flex h-full min-h-[145px] flex-col items-center justify-center gap-4 rounded-3xl border border-blue-15 bg-white px-5 py-8 transition hover:border-blue-20 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">
+          <span class="flex h-[50px] shrink-0 items-center">
+            <img src="assets/icon-famille.svg" alt="" aria-hidden="true" class="size-[50px] object-contain" />
+          </span>
+          <span class="text-center text-lg font-semibold">Famille et couple</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex h-full min-h-[145px] flex-col items-center justify-center gap-5 rounded-3xl border border-blue-15 bg-white px-5 py-8 transition hover:border-blue-20 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">
+          <span class="flex h-[50px] shrink-0 items-center">
+            <img src="assets/icon-habitation.svg" alt="" aria-hidden="true" class="size-10 object-contain" />
+          </span>
+          <span class="text-center text-lg font-semibold">Habitation</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex h-full min-h-[145px] flex-col items-center justify-center gap-5 rounded-3xl border border-blue-15 bg-white px-5 py-8 transition hover:border-blue-20 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">
+          <span class="flex h-[50px] shrink-0 items-center">
+            <img src="assets/icon-travail.svg" alt="" aria-hidden="true" class="size-[50px] object-contain" />
+          </span>
+          <span class="text-center text-lg font-semibold">Travail et emploi</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex h-full min-h-[145px] flex-col items-center justify-center gap-5 rounded-3xl border border-blue-15 bg-white px-5 py-8 transition hover:border-blue-20 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-60">
+          <span class="flex h-[50px] shrink-0 items-center">
+            <img src="assets/icon-immigration.svg" alt="" aria-hidden="true" class="size-[50px] object-contain" />
+          </span>
+          <span class="text-center text-lg font-semibold">Immigration</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+</body>
+</html>
